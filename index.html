@@ -167,41 +167,6 @@ Love to hear your comments criticisms and advises. After all life is a continuou
 					<div class="row">
 						<div class="portfolio-wrapper">
 
-                        
-							
-                            
-                            <?php 
-  // Image extensions
-  $image_extensions = array("png","jpg","jpeg","gif");
-
-  // Target directory
-  $dir = 'portfolio/';
-  if (is_dir($dir)){
- 
-   if ($dh = opendir($dir)){
-    $count = 1;
-
-    // Read files
-    while (($file = readdir($dh)) !== false){
-
-     if($file != '' && $file != '.' && $file != '..'){
- 
-      // Thumbnail image path
-      $thumbnail_path = "portfolio/thumbnail/".$file;
-
-      // Image path
-      $image_path = "portfolio/".$file;
- 
-      $thumbnail_ext = pathinfo($thumbnail_path, PATHINFO_EXTENSION);
-      $image_ext = pathinfo($image_path, PATHINFO_EXTENSION);
-
-	  // Check its not folder and it is image file
-	  // Check its not folder and it is image file
-      if(!is_dir($image_path) && 
-         in_array($thumbnail_ext,$image_extensions) && 
-         in_array($image_ext,$image_extensions)){
-      ?>
-
                             <div class="portfolio-item">
 
 
@@ -223,22 +188,6 @@ Love to hear your comments criticisms and advises. After all life is a continuou
 
 
 
-                                <?php
-
-// Break
-if( $count%4 == 0){
-
-}
-$count++;
-}
-}
-
-}
-closedir($dh);
-}
-  }
-
-?>
 								
 							
 							
