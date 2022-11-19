@@ -248,11 +248,11 @@ Back to top button
 .navbar-mobile a {
   padding: 10px 20px;
   font-size: 14px;
-  color: #3b434a;
+  color: #7d7d7d;
 }
 
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-  color: #ffb727;
+  color: #000000;
 }
 
 .navbar-mobile .getstarted {
