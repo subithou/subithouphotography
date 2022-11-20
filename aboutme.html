@@ -48,6 +48,9 @@
 </head>
 
 <body>
+  <div class="loader">
+    
+  </div>
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex justify-content-center align-items-center ">
@@ -173,6 +176,18 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+
+  
+<script>
+  var loader = document.querySelector(".loader")
+
+window.addEventListener("load", vanish);
+
+function vanish() {
+  loader.classList.add("disppear");
+}
+</script>
 
 </body>
 

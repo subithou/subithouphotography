@@ -45,8 +45,12 @@
 </head>
 
 
-<body onload="myfunction()">
-  <div id="loader"></div>
+<body>
+
+
+  <div class="loader">
+    
+  </div>
   
 
   <!-- ======= Header ======= -->
@@ -357,15 +361,15 @@
     
 
     
-</script>-->
+</script>
 <script>
   var preloader = document.getElementById('loader');
 
   function myfunction(){
     preloader.style.display = 'none';
-    
+
   }
-</script>
+</script>-->
 <!--
   <script>
   $(document).ready(function(){   
@@ -382,7 +386,15 @@
 -->
 
 
+<script>
+  var loader = document.querySelector(".loader")
 
+window.addEventListener("load", vanish);
+
+function vanish() {
+  loader.classList.add("disppear");
+}
+</script>
 
 </body>
 

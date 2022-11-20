@@ -47,9 +47,11 @@
   ======================================================== -->
 </head>
 
-<body onload="myfunction()">
-  <div id="loader"></div>
-
+<body >
+  <div class="loader">
+    
+  </div>
+  
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex justify-content-center align-items-center ">
     <a href="index.html" >
@@ -773,15 +775,15 @@
   <script src="assets/js/main.js"></script>
 
 
- <script>
-  var preloader = document.getElementById('loader');
-
-  function myfunction(){
-    preloader.style.display = 'none';
-    
+  <script>
+    var loader = document.querySelector(".loader")
+  
+  window.addEventListener("load", vanish);
+  
+  function vanish() {
+    loader.classList.add("disppear");
   }
-</script>
-
+  </script>
 
 
 
