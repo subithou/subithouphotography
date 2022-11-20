@@ -1360,11 +1360,17 @@ background: url("../img/footer-bg.jpg") top center no-repeat;
 
 
 #loader {
-  background: #000 url(../img/logo-white.gif) no-repeat center  ;
+  background: #000 url(../img/loader.gif) no-repeat center  ;
   background-size: 30%;
   height: 100%;
   width: 100%;
   position: fixed;
-  z-index: 100;
+  z-index: 999999;
 
+}
+
+@media (min-width: 350px) {
+  #loader {
+    position: fixed;
+  }
 }
