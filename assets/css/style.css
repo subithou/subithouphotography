@@ -1357,3 +1357,14 @@ background: url("../img/footer-bg.jpg") top center no-repeat;
   text-transform: uppercase;
   text-align: center;
 }
+
+
+#loader {
+  background: #000 url(../img/logo-white.gif) no-repeat center  ;
+  background-size: 30%;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+
+}
