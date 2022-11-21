@@ -1377,11 +1377,11 @@ background: url("../img/footer-bg.jpg") top center no-repeat;
 }
 
 .disppear{
-  animation: vanish 8s forwards;
+  animation: vanish 12s forwards;
 }
 @keyframes vanish {
   100%{
-    opacity: 85%;
+    opacity: 100%;
     visibility: hidden;
   }
 }
