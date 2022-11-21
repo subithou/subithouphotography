@@ -1381,7 +1381,7 @@ background: url("../img/footer-bg.jpg") top center no-repeat;
 }
 @keyframes vanish {
   100%{
-    opacity: 100%;
+    opacity: 85%;
     visibility: hidden;
   }
 }
